@@ -1,109 +1,198 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-	<html xmlns="http://www.w3.org/1999/xhtml">
-		<head>
-			<title>Núcleo do Evento!</title>
-<link rel="stylesheet" href="templates/nucleodoevento/css/template_css.css" type="text/css" />
-			<link rel="stylesheet" href="templates/nucleodoevento/css/template_css.css" type="text/css" />
-			<link rel="shortcut icon" href="images/favicon.ico" />
-			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-			<meta name="robots" content="noindex, nofollow" />
-					</head>
-		<body class="contentpane">
-					<script language="JavaScript" type="text/JavaScript">
-		function create_field(i) {
-			var i2 = i + 1;
-			var rest = (5 - 1)- i;
-			document.getElementById('numfield_'+i).innerHTML = '<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td><div align="left"><input name="namefriend[]" type="text" size="25" class="inputbox"></div></td><td><div align="right"><input name="emailfriend[]" type="text" size="25" class="inputbox"></div></td></tr></table>';
-			if( rest>0 ){
-				document.getElementById('numfield_'+i).innerHTML += (i <= 4) ? '<br /><span id="numfield_'+i2+'"><a href="javascript:create_field('+i2+')">Adicionar email(s)</a> ('+rest+')<input type="hidden" id="numfieldemail" name="numfieldemail" value="'+i+'"></span>' : '';
-			}else{
-				document.getElementById('numfield_'+i).innerHTML += (i <= 4) ? '<br /><span id="numfield_'+i2+'"><a href="index2.php?option=com_visualrecommend&amp;task=showform&amp;com=content&amp;id=1&amp;Itemid=0">Para reduzir</a><input type="hidden" id="numfieldemail" name="numfieldemail" value="'+i+'"></span>' : '';
-			}
-		}
-		
-		function MM_findObj(n, d) { //v4.01
-		  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-			d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-		  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-		  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-		  if(!x && d.getElementById) x=d.getElementById(n); return x;
-		}
-		
-		function MM_validateForm() { //v4.0
-		  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
-		  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
-			if (val) { nm=val.name; if ((val=val.value)!="") {
-			  if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
-				if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
-			  } else if (test!='R') { num = parseFloat(val);
-				if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
-				if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
-				  min=test.substring(8,p); max=test.substring(p+1);
-				  if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
-			} } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
-		  } if (errors) alert('The following error(s) occurred:\n'+errors);
-		  document.MM_returnValue = (errors == '');
-		}
-		</script>
-				
-		<div style="clear:both;">
-		<form action="index2.php@option=com_visualrecommend&amp;task=showform&amp;com=content&amp;id=1&amp;Itemid=1.html" method="post" name="visualrecommendform" onSubmit="MM_validateForm('emailsender','','RisEmail');return document.MM_returnValue">
-		  <img src="images/icones/email.png"/>
-		  <table width="100%" border="0" align="left" cellpadding="0" cellspacing="0" style="font-family:Arial, Helvetica, sans-serif; font-size:11px;">
-            <tr>
-              <td colspan="2" class="contentheading" style="font-size:12px;">Mande este artigo para seus amigos...</td>
-            </tr>
-            <tr>
-              <td colspan="2" class="contentdescription">Núcleo do Evento!</td>
-            </tr>
-            <tr>
-              <td>Nome do(s) seu(s) amigo(s)</td>
-              <td><div align="right">Email do(s) seu(s) amigo(s)</div></td>
-            </tr>			
-            <tr><td><div align="left"><input name="namefriend[]" type="text" size="25" class="inputbox">
-            </div></td><td><div align="right"><input name="emailfriend[]" type="text" size="25" class="inputbox">
-            </div></td></tr>
-						
-            <tr>
-              <td colspan="2">
-			  <span id="numfield_1"><a href="javascript:create_field(1)">Adicionar email(s)</a> (4)<input type="hidden" id="numfieldemail" name="numfieldemail" value="0"></span>
-			  </td>
-            </tr>			
-			            <tr>
-              <td valign="bottom">Seu nome(*)</td>
-              <td valign="bottom"><div align="right">Seu endereço de email (*)</div></td>
-            </tr>
-            <tr>
-              <td><div align="left">
-			                <input name="namesender" type="text" size="25" value="" class="inputbox">
-			                </div></td>
-              <td><div align="right">
-              <input name="emailsender" type="text" size="25" value="" class="inputbox">
-              </div></td>
-            </tr>
-			            <tr>
-              <td colspan="2">Mensagem:</td>
-            </tr>			
-            <tr>			
-              <td colspan="2"><textarea name="message" rows="8" class="inputbox" style="width:100%;"></textarea></td>
-            </tr>
-						
-            <tr>
-			  <td colspan="2">
-						  <input type="hidden" name="addlink2profile" value="0">
-						  </td>
-            </tr>			
-            <tr>
-              <td colspan="2"><input type="submit" name="Submit" value="Enviar" class="button"></td>
-            </tr>
-          </table>
-		<input type="hidden" name="option" value="com_visualrecommend" />
-		<input type="hidden" name="task" value="send" />
-		<input type="hidden" name="cid" value="1" />
-		<input type="hidden" name="itemid" value="0" />
-		<input type="hidden" name="com" value="content" />
-		</form>
-		<div style="text-align:right;font-family:Arial, Helvetica, sans-serif; font-size:11px;">
-		<br /><a href="javascript:window.close();">[Fechar]</a></div></div>		</body>
-	</html>
-	
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Núcleo do Evento!</title>
+    <link
+      rel="stylesheet"
+      href="templates/nucleodoevento/css/template_css.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="templates/nucleodoevento/css/template_css.css"
+      type="text/css"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+  </head>
+  <body class="contentpane">
+    <script language="JavaScript" type="text/JavaScript">
+      function create_field(i) {
+      	var i2 = i + 1;
+      	var rest = (5 - 1)- i;
+      	document.getElementById('numfield_'+i).innerHTML = '<table width="100%"  border="0" cellspacing="0" cellpadding="0"><tr><td><div align="left"><input name="namefriend[]" type="text" size="25" class="inputbox"></div></td><td><div align="right"><input name="emailfriend[]" type="text" size="25" class="inputbox"></div></td></tr></table>';
+      	if( rest>0 ){
+      		document.getElementById('numfield_'+i).innerHTML += (i <= 4) ? '<br /><span id="numfield_'+i2+'"><a href="javascript:create_field('+i2+')">Adicionar email(s)</a> ('+rest+')<input type="hidden" id="numfieldemail" name="numfieldemail" value="'+i+'"></span>' : '';
+      	}else{
+      		document.getElementById('numfield_'+i).innerHTML += (i <= 4) ? '<br /><span id="numfield_'+i2+'"><a href="index2.php?option=com_visualrecommend&amp;task=showform&amp;com=content&amp;id=1&amp;Itemid=0">Para reduzir</a><input type="hidden" id="numfieldemail" name="numfieldemail" value="'+i+'"></span>' : '';
+      	}
+      }
+
+      function MM_findObj(n, d) { //v4.01
+        var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+      	d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+        if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+        for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+        if(!x && d.getElementById) x=d.getElementById(n); return x;
+      }
+
+      function MM_validateForm() { //v4.0
+        var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+        for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+      	if (val) { nm=val.name; if ((val=val.value)!="") {
+      	  if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+      		if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\n';
+      	  } else if (test!='R') { num = parseFloat(val);
+      		if (isNaN(val)) errors+='- '+nm+' must contain a number.\n';
+      		if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+      		  min=test.substring(8,p); max=test.substring(p+1);
+      		  if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\n';
+      	} } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\n'; }
+        } if (errors) alert('The following error(s) occurred:\n'+errors);
+        document.MM_returnValue = (errors == '');
+      }
+    </script>
+
+    <div style="clear: both">
+      <form
+        action="index2.php@option=com_visualrecommend&amp;task=showform&amp;com=content&amp;id=1&amp;Itemid=1.html"
+        method="post"
+        name="visualrecommendform"
+        onSubmit="MM_validateForm('emailsender','','RisEmail');return document.MM_returnValue"
+      >
+        <img src="images/icones/email.png" />
+        <table
+          width="100%"
+          border="0"
+          align="left"
+          cellpadding="0"
+          cellspacing="0"
+          style="font-family: Arial, Helvetica, sans-serif; font-size: 11px"
+        >
+          <tr>
+            <td colspan="2" class="contentheading" style="font-size: 12px">
+              Mande este artigo para seus amigos...
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="contentdescription">Núcleo do Evento!</td>
+          </tr>
+          <tr>
+            <td>Nome do(s) seu(s) amigo(s)</td>
+            <td><div align="right">Email do(s) seu(s) amigo(s)</div></td>
+          </tr>
+          <tr>
+            <td>
+              <div align="left">
+                <input
+                  name="namefriend[]"
+                  type="text"
+                  size="25"
+                  class="inputbox"
+                />
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <input
+                  name="emailfriend[]"
+                  type="text"
+                  size="25"
+                  class="inputbox"
+                />
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <span id="numfield_1"
+                ><a href="javascript:create_field(1)">Adicionar email(s)</a>
+                (4)<input
+                  type="hidden"
+                  id="numfieldemail"
+                  name="numfieldemail"
+                  value="0"
+              /></span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="bottom">Seu nome(*)</td>
+            <td valign="bottom">
+              <div align="right">Seu endereço de email (*)</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div align="left">
+                <input
+                  name="namesender"
+                  type="text"
+                  size="25"
+                  value=""
+                  class="inputbox"
+                />
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <input
+                  name="emailsender"
+                  type="text"
+                  size="25"
+                  value=""
+                  class="inputbox"
+                />
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">Mensagem:</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <textarea
+                name="message"
+                rows="8"
+                class="inputbox"
+                style="width: 100%"
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <input type="hidden" name="addlink2profile" value="0" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input
+                type="submit"
+                name="Submit"
+                value="Enviar"
+                class="button"
+              />
+            </td>
+          </tr>
+        </table>
+        <input type="hidden" name="option" value="com_visualrecommend" />
+        <input type="hidden" name="task" value="send" />
+        <input type="hidden" name="cid" value="1" />
+        <input type="hidden" name="itemid" value="0" />
+        <input type="hidden" name="com" value="content" />
+      </form>
+      <div
+        style="
+          text-align: right;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 11px;
+        "
+      >
+        <br /><a href="javascript:window.close();">[Fechar]</a>
+      </div>
+    </div>
+  </body>
+</html>
