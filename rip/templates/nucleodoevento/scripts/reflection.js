@@ -86,7 +86,7 @@ var Reflection = {
 				
 				reflection.style.marginBottom = "-"+(p.height-reflectionHeight)+'px';
 				reflection.hspace = p.hspace;
-				reflection.style.filter = 'flipv progid:DXImageTransform.Microsoft.Alpha(opacity="+(options["opacity']*100)+', style=1, finishOpacity=0, startx=0, starty=0, finishx=0, finishy="+(options["height']*100)+')';
+				reflection.style.filter = 'flipv progid:DXImageTransform.Microsoft.Alpha(opacity="'+(options["opacity"]*100)+', style=1, finishOpacity=0, startx=0, starty=0, finishx=0, finishy="'+(options["height"]*100)+')';
 				d.style.overflow = "hidden";
 				d.style.width = (reflectionWidth + p.hspace*2) +'px';
 				d.style.height = divHeight+'px';
