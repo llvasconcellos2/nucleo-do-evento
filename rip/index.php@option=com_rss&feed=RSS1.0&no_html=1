@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- generator="FeedCreator 1.7.2" -->
 <rdf:RDF
 	xmlns="http://purl.org/rss/1.0/"
@@ -6,8 +6,8 @@
 	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/">
 	<channel rdf:about="http://www.nucleodoevento.com.br">
-		<title>Núcleo do Evento</title>
-		<description>Núcleo do Evento RSS Feed</description>
+		<title>Nï¿½cleo do Evento</title>
+		<description>Nï¿½cleo do Evento RSS Feed</description>
 		<link>http://www.nucleodoevento.com.br</link>
 		<image rdf:resource="images/M_images/logo_header.png" />
 	   <dc:date>2017-03-02T03:16:34+01:00</dc:date>
@@ -20,7 +20,7 @@
 		</items>
 	</channel>
 	<image rdf:about="images/M_images/logo_header.png">
-		<title>Núcleo do Evento</title>
+		<title>Nï¿½cleo do Evento</title>
 		<link>http://www.nucleodoevento.com.br</link>
 		<url>images/M_images/logo_header.png</url>
 	</image>
@@ -28,7 +28,7 @@
 		<dc:format>text/html</dc:format>
 		<dc:date>2004-06-12T11:54:06+01:00</dc:date>
 		<dc:source>http://www.nucleodoevento.com.br</dc:source>
-		<title>Núcleo do Evento!</title>
+		<title>Nï¿½cleo do Evento!</title>
 		<link>index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2</link>
 		<description>A FAGGA oferece um conjunto completo de servi&amp;ccedil;os para planejamento, cria&amp;ccedil;&amp;atilde;o, produ&amp;ccedil;&amp;atilde;o, administra&amp;ccedil;&amp;atilde;o e log&amp;iacute;stica de eventos. Desde uma reuni&amp;atilde;o...</description>
 	</item>

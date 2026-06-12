@@ -1,4 +1,4 @@
-/**
+﻿/**
  * reflection.js v1.6
  *
  * Contributors: Cow http://cow.neondragon.net

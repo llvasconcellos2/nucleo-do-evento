@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- generator="FeedCreator 1.7.2" -->
 <feed version="0.3" xmlns="http://purl.org/atom/ns#">
-	<title>Núcleo do Evento</title>
-	<tagline>Núcleo do Evento RSS Feed</tagline>
+	<title>Nï¿½cleo do Evento</title>
+	<tagline>Nï¿½cleo do Evento RSS Feed</tagline>
 	<link rel="alternate" type="text/html" href="http://www.nucleodoevento.com.br"/>
 	<id>http://www.nucleodoevento.com.br</id>
 	<modified>2017-03-02T03:16:35+01:00</modified>
 	<generator>FeedCreator 1.7.2</generator>
 	<entry>
-		<title>Núcleo do Evento!</title>
+		<title>Nï¿½cleo do Evento!</title>
 		<link rel="alternate" type="text/html" href="index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2"/>
 		<created>2004-06-12T11:54:06+01:00</created>
 		<issued>2004-06-12T11:54:06+01:00</issued>

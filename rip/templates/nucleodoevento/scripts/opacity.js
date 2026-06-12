@@ -1,4 +1,4 @@
-// Browser Detect Lite  v2.1
+﻿// Browser Detect Lite  v2.1
 // http://www.dithered.com/javascript/browser_detect/index.html
 // modified by Chris Nott (chris@NOSPAMdithered.com - remove NOSPAM)
 //

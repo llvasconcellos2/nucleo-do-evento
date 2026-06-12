@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- generator="FeedCreator 1.7.2" -->
 <rss version="2.0">
 	<channel>
-		<title>Núcleo do Evento</title>
-		<description>Núcleo do Evento RSS Feed</description>
+		<title>Nï¿½cleo do Evento</title>
+		<description>Nï¿½cleo do Evento RSS Feed</description>
 		<link>http://www.nucleodoevento.com.br</link>
 		<lastBuildDate>Thu, 02 Mar 2017 03:16:34 +0100</lastBuildDate>
 		<generator>FeedCreator 1.7.2</generator>
 		<image>
 			<url>images/M_images/logo_header.png</url>
-			<title>Núcleo do Evento</title>
+			<title>Nï¿½cleo do Evento</title>
 			<link>http://www.nucleodoevento.com.br</link>
-			<description>Núcleo do Evento RSS Feed</description>
+			<description>Nï¿½cleo do Evento RSS Feed</description>
 		</image>
 		<item>
-			<title>Núcleo do Evento!</title>
+			<title>Nï¿½cleo do Evento!</title>
 			<link>index.php?option=com_content&amp;task=view&amp;id=1&amp;Itemid=2</link>
 			<description>A FAGGA oferece um conjunto completo de servi&amp;ccedil;os para planejamento, cria&amp;ccedil;&amp;atilde;o, produ&amp;ccedil;&amp;atilde;o, administra&amp;ccedil;&amp;atilde;o e log&amp;iacute;stica de eventos. Desde uma reuni&amp;atilde;o...</description>
 			<category>News - Latest</category>

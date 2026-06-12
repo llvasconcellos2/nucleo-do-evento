@@ -1,4 +1,4 @@
-var currentFontSize = 4;
+﻿var currentFontSize = 4;
 
 function revertStyles(fontsize){
 	currentFontSize = fontsize;

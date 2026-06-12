@@ -1,4 +1,4 @@
-/**
+﻿/**
  * SWFObject v1.4.4: Flash Player detection and embed - http://blog.deconcept.com/swfobject/
  *
  * SWFObject is (c) 2006 Geoff Stearns and is released under the MIT License:
