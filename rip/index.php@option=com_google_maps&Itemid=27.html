@@ -87,7 +87,7 @@
     </script>
   </head>
 
-  <body id="bd" class="wide fs3" onload="initMap()" onunload="GUnload()">
+  <body id="bd" class="wide fs3">
     <a
       title="Pular Para o Conteúdo"
       href="index.php@option=com_google_maps&amp;Itemid=27.html#Content"
@@ -345,139 +345,12 @@
                         height: 450px;
                       "
                     >
-                      Loading map...
+                      <img src="images/mapa.png" />
                     </div>
                     <div id="miscDiv"><br /><br /></div>
                     <div id="testDiv"></div>
                   </div>
-                  <script
-                    src="http://maps.google.com/maps?file=api&v=2&key=ABQIAAAAnDabREt3ufSAcfwHgj8goBQiNMZB3lpRrIq_EazjhUEbDywPsxQyduWrHespJIt0tpRPm_EITsVipw"
-                    type="text/javascript"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/gicons.js"
-                  ></script>
-                  <link
-                    href="components/com_google_maps/tooltip.css"
-                    rel="stylesheet"
-                    type="text/css"
-                  />
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/ajaxslt/misc.js"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/ajaxslt/dom.js"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/ajaxslt/xpath.js"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/ajaxslt/xslt.js"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/ajaxslt/xpathdebug.js"
-                  ></script>
-                  <script
-                    type="text/javascript"
-                    src="components/com_google_maps/google_maps.js"
-                  ></script>
-                  <script type="text/javascript">
-                    //<![CDATA[
-
-                    // Grab XSL File
-                    var safariCompat = 0;
-                    if (safariCompat == 0) {
-                      logging__ = false;
-                      xsltdebug = false;
-                      xpathdebug = false;
-                      var xmlHttp = GXmlHttp.create();
-                      xmlHttp.open(
-                        "GET",
-                        "components/com_google_maps/minipage.xsl",
-                        false,
-                      );
-                      xmlHttp.send(null);
-                    }
-                    // Defining Global Variables
-                    //Map Globals
-                    var map;
-                    var xmlUrl = "components/com_google_maps/google_maps.xml";
-                    var infoWindows = new Array();
-                    var xmlCats = new Array();
-                    var infoWindowsHtml = new Array();
-                    var markers = new Array();
-                    var infos = new Array();
-                    var i = 0;
-                    var autoOpen = 1;
-                    var centerId = -1;
-                    var centerLat = -26.31965;
-                    var centerLng = -48.82629;
-                    var zoomLevel = 17;
-                    var contZoom = 0;
-                    var doubleclickZoom = 0;
-                    var whichType = G_NORMAL_MAP;
-                    var showType = 1;
-                    var whichZoom = 1;
-                    var showScale = 1;
-                    var catDisplay = [];
-                    var pointsArray = [];
-                    var cbRealname = 0;
-                    // Sidebar Globals
-                    var sidebar_htmls = new Array();
-                    var current_sidebar;
-                    var sidebar_place = 0;
-                    var sidebar_num = 5;
-                    var sidebar_exists = 0;
-                    var sidebar_showcat = 1;
-                    var prevplace;
-                    var nextplace;
-                    var prevcat;
-                    // Tooltip Globals
-                    var tooltipShow = 0;
-                    var tooltip;
-                    // Overview Globals
-                    var omap;
-                    var overviewShow = 1;
-                    var overviewHeight = 200;
-                    var overviewWidth = 200;
-                    // Search Globals
-                    var ymarkers = [];
-                    var search_html;
-                    var yahooInfo;
-                    // No more template editing!
-                    var editBodytag = 0;
-                    if (editBodytag == 0) {
-                      var oldOnload = window.onload;
-                      if (typeof window.onload != "function") {
-                        window.onload = function () {
-                          initMap();
-                        };
-                      } else {
-                        window.onload = function () {
-                          oldOnload();
-                          initMap();
-                        };
-                      }
-                      var oldOnunload = window.onunload;
-                      if (typeof window.onunload != "function") {
-                        window.onunload = function () {
-                          GUnload();
-                        };
-                      } else {
-                        window.onunload = function () {
-                          oldOnunload();
-                          GUnload();
-                        };
-                      }
-                    }
-                    //]]>
-                  </script>
+                  
 
                   <!-- BEGIN: BANNER -->
                   <div id="ja-banner">&nbsp;</div>
