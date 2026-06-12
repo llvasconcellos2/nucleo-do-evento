@@ -27,41 +27,149 @@
     />
 
     <style>
-              #fp-banner1 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cloud-service-back.jpg') repeat-x top; }
-      #fp-banner-image1 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cloud-service.en.jpg') no-repeat; }
-      #fp-banner-image1 .link-960 { left: 451px; top: 183px; width: 176px; height: 42px; }
-      #fp-banner-image1 .link-640 { left: 300px; top: 122px; width: 117px; height: 28px; }
-      #fp-banner-image1 .link-320 { left: 85px; top: 258px; width: 134px; height: 32px; }
-              #fp-banner2 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg') repeat-x top; }
-      #fp-banner-image2 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cluster-75.en.jpg') no-repeat; }
-      #fp-banner-image2 .link-960 { left: 558px; top: 203px; width: 179px; height: 41px; }
-      #fp-banner-image2 .link-640 { left: 372px; top: 135px; width: 119px; height: 27px; }
-      #fp-banner-image2 .link-320 { left: 93px; top: 260px; width: 134px; height: 32px; }
-              #fp-banner3 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg') repeat-x top; }
-      #fp-banner-image3 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-group-repl.en.jpg') no-repeat; }
-      #fp-banner-image3 .link-960 { left: 454px; top: 200px; width: 155px; height: 42px; }
-      #fp-banner-image3 .link-640 { left: 302px; top: 133px; width: 103px; height: 28px; }
-      #fp-banner-image3 .link-320 { left: 96px; top: 262px; width: 133px; height: 31px; }
-              #fp-banner4 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg') repeat-x top; }
-      #fp-banner-image4 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-proven.en.jpg') no-repeat; }
-      #fp-banner-image4 .link-960 { left: 377px; top: 199px; width: 155px; height: 42px; }
-      #fp-banner-image4 .link-640 { left: 251px; top: 133px; width: 103px; height: 28px; }
-      #fp-banner-image4 .link-320 { left: 95px; top: 260px; width: 134px; height: 32px; }
-              @media
-      only screen and (-webkit-min-device-pixel-ratio: 1.25),
-      only screen and (   min--moz-device-pixel-ratio: 1.25),
-      only screen and (     -o-min-device-pixel-ratio: 5/4),
-      only screen and (        min-device-pixel-ratio: 1.25),
-      only screen and (                min-resolution: 120dpi),
-      only screen and (                min-resolution: 1.25dppx) {
-                  #fp-banner1 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cloud-service-back.jpg') repeat-x top; }
-          #fp-banner-image1 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cloud-service.en.jpg') no-repeat; }
-                  #fp-banner2 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg') repeat-x top; }
-          #fp-banner-image2 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cluster-75.en.jpg') no-repeat; }
-                  #fp-banner3 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg') repeat-x top; }
-          #fp-banner-image3 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-group-repl.en.jpg') no-repeat; }
-                  #fp-banner4 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg') repeat-x top; }
-          #fp-banner-image4 { background: url('https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-proven.en.jpg') no-repeat; }
+      #fp-banner1 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cloud-service-back.jpg")
+          repeat-x top;
+      }
+      #fp-banner-image1 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cloud-service.en.jpg")
+          no-repeat;
+      }
+      #fp-banner-image1 .link-960 {
+        left: 451px;
+        top: 183px;
+        width: 176px;
+        height: 42px;
+      }
+      #fp-banner-image1 .link-640 {
+        left: 300px;
+        top: 122px;
+        width: 117px;
+        height: 28px;
+      }
+      #fp-banner-image1 .link-320 {
+        left: 85px;
+        top: 258px;
+        width: 134px;
+        height: 32px;
+      }
+      #fp-banner2 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg")
+          repeat-x top;
+      }
+      #fp-banner-image2 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-cluster-75.en.jpg")
+          no-repeat;
+      }
+      #fp-banner-image2 .link-960 {
+        left: 558px;
+        top: 203px;
+        width: 179px;
+        height: 41px;
+      }
+      #fp-banner-image2 .link-640 {
+        left: 372px;
+        top: 135px;
+        width: 119px;
+        height: 27px;
+      }
+      #fp-banner-image2 .link-320 {
+        left: 93px;
+        top: 260px;
+        width: 134px;
+        height: 32px;
+      }
+      #fp-banner3 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg")
+          repeat-x top;
+      }
+      #fp-banner-image3 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-group-repl.en.jpg")
+          no-repeat;
+      }
+      #fp-banner-image3 .link-960 {
+        left: 454px;
+        top: 200px;
+        width: 155px;
+        height: 42px;
+      }
+      #fp-banner-image3 .link-640 {
+        left: 302px;
+        top: 133px;
+        width: 103px;
+        height: 28px;
+      }
+      #fp-banner-image3 .link-320 {
+        left: 96px;
+        top: 262px;
+        width: 133px;
+        height: 31px;
+      }
+      #fp-banner4 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-grey-gradient-background.jpg")
+          repeat-x top;
+      }
+      #fp-banner-image4 {
+        background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b1280-mysql-proven.en.jpg")
+          no-repeat;
+      }
+      #fp-banner-image4 .link-960 {
+        left: 377px;
+        top: 199px;
+        width: 155px;
+        height: 42px;
+      }
+      #fp-banner-image4 .link-640 {
+        left: 251px;
+        top: 133px;
+        width: 103px;
+        height: 28px;
+      }
+      #fp-banner-image4 .link-320 {
+        left: 95px;
+        top: 260px;
+        width: 134px;
+        height: 32px;
+      }
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
+        only screen and (min--moz-device-pixel-ratio: 1.25),
+        only screen and (-o-min-device-pixel-ratio: 5/4),
+        only screen and (min-device-pixel-ratio: 1.25),
+        only screen and (min-resolution: 120dpi),
+        only screen and (min-resolution: 1.25dppx) {
+        #fp-banner1 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cloud-service-back.jpg")
+            repeat-x top;
+        }
+        #fp-banner-image1 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cloud-service.en.jpg")
+            no-repeat;
+        }
+        #fp-banner2 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg")
+            repeat-x top;
+        }
+        #fp-banner-image2 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-cluster-75.en.jpg")
+            no-repeat;
+        }
+        #fp-banner3 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg")
+            repeat-x top;
+        }
+        #fp-banner-image3 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-group-repl.en.jpg")
+            no-repeat;
+        }
+        #fp-banner4 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-grey-gradient-background.jpg")
+            repeat-x top;
+        }
+        #fp-banner-image4 {
+          background: url("https://www-jp.mysql.com/common/themes/sakila/banners/b2560-mysql-proven.en.jpg")
+            no-repeat;
+        }
+      }
     </style>
 
     <link
