@@ -38,7 +38,7 @@
       }
 
       function MM_validateForm() { //v4.0
-        var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+        var i,p,q,nm,test,num,min,max,errors="",args=MM_validateForm.arguments;
         for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
       	if (val) { nm=val.name; if ((val=val.value)!="") {
       	  if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
@@ -55,129 +55,123 @@
     </script>
 
     <div style="clear: both">
-      
-        <img src="images/icones/email.png" />
-        <table
-          width="100%"
-          border="0"
-          align="left"
-          cellpadding="0"
-          cellspacing="0"
-          style="font-family: Arial, Helvetica, sans-serif; font-size: 11px"
-        >
-          <tr>
-            <td colspan="2" class="contentheading" style="font-size: 12px">
-              Mande este artigo para seus amigos...
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2" class="contentdescription">Lembrancinhas</td>
-          </tr>
-          <tr>
-            <td>Nome do(s) seu(s) amigo(s)</td>
-            <td><div align="right">Email do(s) seu(s) amigo(s)</div></td>
-          </tr>
-          <tr>
-            <td>
-              <div align="left">
-                <input
-                  name="namefriend[]"
-                  type="text"
-                  size="25"
-                  class="inputbox"
-                />
-              </div>
-            </td>
-            <td>
-              <div align="right">
-                <input
-                  name="emailfriend[]"
-                  type="text"
-                  size="25"
-                  class="inputbox"
-                />
-              </div>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="2">
-              <span id="numfield_1"
-                ><a href="javascript:create_field(1)">Adicionar email(s)</a>
-                (4)<input
-                  type="hidden"
-                  id="numfieldemail"
-                  name="numfieldemail"
-                  value="0"
-              /></span>
-            </td>
-          </tr>
-          <tr>
-            <td valign="bottom">Seu nome(*)</td>
-            <td valign="bottom">
-              <div align="right">Seu endereço de email (*)</div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div align="left">
-                <input
-                  name="namesender"
-                  type="text"
-                  size="25"
-                  value=""
-                  class="inputbox"
-                />
-              </div>
-            </td>
-            <td>
-              <div align="right">
-                <input
-                  name="emailsender"
-                  type="text"
-                  size="25"
-                  value=""
-                  class="inputbox"
-                />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">Mensagem:</td>
-          </tr>
-          <tr>
-            <td colspan="2">
-              <textarea
-                name="message"
-                rows="8"
-                class="inputbox"
-                style="width: 100%"
-              ></textarea>
-            </td>
-          </tr>
-
-          <tr>
-            <td colspan="2">
-              <input type="hidden" name="addlink2profile" value="0" />
-            </td>
-          </tr>
-          <tr>
-            <td colspan="2">
+      <img src="images/icones/email.png" />
+      <table
+        width="100%"
+        border="0"
+        align="left"
+        cellpadding="0"
+        cellspacing="0"
+        style="font-family: Arial, Helvetica, sans-serif; font-size: 11px"
+      >
+        <tr>
+          <td colspan="2" class="contentheading" style="font-size: 12px">
+            Mande este artigo para seus amigos...
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="contentdescription">Lembrancinhas</td>
+        </tr>
+        <tr>
+          <td>Nome do(s) seu(s) amigo(s)</td>
+          <td><div align="right">Email do(s) seu(s) amigo(s)</div></td>
+        </tr>
+        <tr>
+          <td>
+            <div align="left">
               <input
-                type="submit"
-                name="Submit"
-                value="Enviar"
-                class="button"
+                name="namefriend[]"
+                type="text"
+                size="25"
+                class="inputbox"
               />
-            </td>
-          </tr>
-        </table>
-        <input type="hidden" name="option" value="com_visualrecommend" />
-        <input type="hidden" name="task" value="send" />
-        <input type="hidden" name="cid" value="2" />
-        <input type="hidden" name="itemid" value="0" />
-        <input type="hidden" name="com" value="content" />
-      
+            </div>
+          </td>
+          <td>
+            <div align="right">
+              <input
+                name="emailfriend[]"
+                type="text"
+                size="25"
+                class="inputbox"
+              />
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <span id="numfield_1"
+              ><a href="javascript:create_field(1)">Adicionar email(s)</a>
+              (4)<input
+                type="hidden"
+                id="numfieldemail"
+                name="numfieldemail"
+                value="0"
+            /></span>
+          </td>
+        </tr>
+        <tr>
+          <td valign="bottom">Seu nome(*)</td>
+          <td valign="bottom">
+            <div align="right">Seu endereço de email (*)</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div align="left">
+              <input
+                name="namesender"
+                type="text"
+                size="25"
+                value=""
+                class="inputbox"
+              />
+            </div>
+          </td>
+          <td>
+            <div align="right">
+              <input
+                name="emailsender"
+                type="text"
+                size="25"
+                value=""
+                class="inputbox"
+              />
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">Mensagem:</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <textarea
+              name="message"
+              rows="8"
+              class="inputbox"
+              style="width: 100%"
+            ></textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <input type="hidden" name="addlink2profile" value="0" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="submit" name="Submit" value="Enviar" class="button" />
+          </td>
+        </tr>
+      </table>
+      <input type="hidden" name="option" value="com_visualrecommend" />
+      <input type="hidden" name="task" value="send" />
+      <input type="hidden" name="cid" value="2" />
+      <input type="hidden" name="itemid" value="0" />
+      <input type="hidden" name="com" value="content" />
+
       <div
         style="
           text-align: right;

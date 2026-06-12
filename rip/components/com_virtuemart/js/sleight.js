@@ -60,6 +60,6 @@ function fnFixPng(img) {
     var src = img.src;
     img.style.width = img.width + "px";
     img.style.height = img.height + "px";
-    img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='" + src + "', sizingMethod='scale')"
+    img.style.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(src="" + src + "", sizingMethod="scale")"
     img.src = "components/com_virtuemart/shop_image/blank.gif";
 }

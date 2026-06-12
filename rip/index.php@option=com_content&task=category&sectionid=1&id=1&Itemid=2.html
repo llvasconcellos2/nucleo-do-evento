@@ -176,25 +176,23 @@
           </div>
 
           <div id="ja-search">
-            
-              <div class="search">
-                <input
-                  name="searchword"
-                  id="mod_search_searchword"
-                  maxlength="20"
-                  alt="search"
-                  class="inputbox"
-                  type="text"
-                  size="20"
-                  value="pesquisar..."
-                  onblur="if (this.value == '') this.value = 'pesquisar...';"
-                  onfocus="if (this.value == 'pesquisar...') this.value = '';"
-                />
-              </div>
+            <div class="search">
+              <input
+                name="searchword"
+                id="mod_search_searchword"
+                maxlength="20"
+                alt="search"
+                class="inputbox"
+                type="text"
+                size="20"
+                value="pesquisar..."
+                onblur="if (this.value == '') this.value = 'pesquisar...';"
+                onfocus="if (this.value == 'pesquisar...') this.value = '';"
+              />
+            </div>
 
-              <input type="hidden" name="option" value="com_search" />
-              <input type="hidden" name="Itemid" value="5" />
-            
+            <input type="hidden" name="option" value="com_search" />
+            <input type="hidden" name="Itemid" value="5" />
           </div>
         </div>
         <!-- END: HEADER -->
@@ -399,195 +397,182 @@
                     </tr>
                     <tr>
                       <td width="100%">
-                        
-                          <table
-                            width="100%"
-                            border="0"
-                            cellspacing="0"
-                            cellpadding="0"
-                          >
-                            <tr>
-                              <td colspan="4">
-                                <table>
-                                  <tr>
-                                    <td
-                                      align="right"
-                                      width="100%"
-                                      nowrap="nowrap"
+                        <table
+                          width="100%"
+                          border="0"
+                          cellspacing="0"
+                          cellpadding="0"
+                        >
+                          <tr>
+                            <td colspan="4">
+                              <table>
+                                <tr>
+                                  <td
+                                    align="right"
+                                    width="100%"
+                                    nowrap="nowrap"
+                                  >
+                                    Filtro&nbsp;
+                                    <input
+                                      type="text"
+                                      name="filter"
+                                      value=""
+                                      class="inputbox"
+                                      onchange="document.adminForm.submit()"
+                                    />
+                                  </td>
+                                  <td
+                                    align="right"
+                                    width="100%"
+                                    nowrap="nowrap"
+                                  >
+                                    &nbsp;&nbsp;&nbsp;Ordem&nbsp;
+                                    <select
+                                      name="order"
+                                      class="inputbox"
+                                      size="1"
+                                      onchange="document.adminForm.submit()"
                                     >
-                                      Filtro&nbsp;
-                                      <input
-                                        type="text"
-                                        name="filter"
-                                        value=""
-                                        class="inputbox"
-                                        onchange="document.adminForm.submit()"
-                                      />
-                                    </td>
-                                    <td
-                                      align="right"
-                                      width="100%"
-                                      nowrap="nowrap"
+                                      <option value="date">Data asc</option>
+                                      <option value="rdate" selected="selected">
+                                        Data desc
+                                      </option>
+                                      <option value="alpha">Título asc</option>
+                                      <option value="ralpha">
+                                        Título desc
+                                      </option>
+                                      <option value="hits">Acessos asc</option>
+                                      <option value="rhits">
+                                        Acessos desc
+                                      </option>
+                                      <option value="author">Autor asc</option>
+                                      <option value="rauthor">
+                                        Autor desc
+                                      </option>
+                                      <option value="order">Ordem</option>
+                                    </select>
+                                  </td>
+                                  <td
+                                    align="right"
+                                    width="100%"
+                                    nowrap="nowrap"
+                                  >
+                                    &nbsp;&nbsp;&nbsp;Exibir #&nbsp;
+                                    <select
+                                      name="limit"
+                                      class="inputbox"
+                                      size="1"
+                                      onchange="
+                                        document.location.href =
+                                          'index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=1&amp;Itemid=2&amp;limit=' +
+                                          this.options[selectedIndex].value +
+                                          '&amp;limitstart=0'
+                                      "
                                     >
-                                      &nbsp;&nbsp;&nbsp;Ordem&nbsp;
-                                      <select
-                                        name="order"
-                                        class="inputbox"
-                                        size="1"
-                                        onchange="document.adminForm.submit()"
-                                      >
-                                        <option value="date">Data asc</option>
-                                        <option
-                                          value="rdate"
-                                          selected="selected"
-                                        >
-                                          Data desc
-                                        </option>
-                                        <option value="alpha">
-                                          Título asc
-                                        </option>
-                                        <option value="ralpha">
-                                          Título desc
-                                        </option>
-                                        <option value="hits">
-                                          Acessos asc
-                                        </option>
-                                        <option value="rhits">
-                                          Acessos desc
-                                        </option>
-                                        <option value="author">
-                                          Autor asc
-                                        </option>
-                                        <option value="rauthor">
-                                          Autor desc
-                                        </option>
-                                        <option value="order">Ordem</option>
-                                      </select>
-                                    </td>
-                                    <td
-                                      align="right"
-                                      width="100%"
-                                      nowrap="nowrap"
-                                    >
-                                      &nbsp;&nbsp;&nbsp;Exibir #&nbsp;
-                                      <select
-                                        name="limit"
-                                        class="inputbox"
-                                        size="1"
-                                        onchange="
-                                          document.location.href =
-                                            'index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=1&amp;Itemid=2&amp;limit=' +
-                                            this.options[selectedIndex].value +
-                                            '&amp;limitstart=0'
-                                        "
-                                      >
-                                        <option value="5">5</option>
-                                        <option value="10">10</option>
-                                        <option value="15">15</option>
-                                        <option value="20">20</option>
-                                        <option value="25">25</option>
-                                        <option value="30">30</option>
-                                        <option value="50" selected="selected">
-                                          50
-                                        </option>
-                                      </select>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="sectiontableheader" width="35%">
-                                Data
-                              </td>
-                              <td class="sectiontableheader">Título</td>
-                              <td
-                                class="sectiontableheader"
-                                align="left"
-                                width="25%"
+                                      <option value="5">5</option>
+                                      <option value="10">10</option>
+                                      <option value="15">15</option>
+                                      <option value="20">20</option>
+                                      <option value="25">25</option>
+                                      <option value="30">30</option>
+                                      <option value="50" selected="selected">
+                                        50
+                                      </option>
+                                    </select>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="sectiontableheader" width="35%">Data</td>
+                            <td class="sectiontableheader">Título</td>
+                            <td
+                              class="sectiontableheader"
+                              align="left"
+                              width="25%"
+                            >
+                              Autor
+                            </td>
+                            <td
+                              align="center"
+                              class="sectiontableheader"
+                              width="5%"
+                            >
+                              Acessos
+                            </td>
+                          </tr>
+                          <tr class="sectiontableentry1">
+                            <td>sábado, 12 de junho de 2004</td>
+                            <td>
+                              <a
+                                href="index.php@option=com_content&amp;task=view&amp;id=1&amp;Itemid=2.html"
                               >
-                                Autor
-                              </td>
-                              <td
-                                align="center"
-                                class="sectiontableheader"
-                                width="5%"
+                                Núcleo do Evento!
+                              </a>
+                            </td>
+                            <td align="left">Web Master</td>
+                            <td align="center">20</td>
+                          </tr>
+                          <tr>
+                            <td colspan="4">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td
+                              align="center"
+                              colspan="4"
+                              class="sectiontablefooter"
+                            >
+                              <span class="pagenav"
+                                ><img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/voltar.gif"
+                                /><img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/voltar.gif"
+                                />&nbsp;Início</span
                               >
-                                Acessos
-                              </td>
-                            </tr>
-                            <tr class="sectiontableentry1">
-                              <td>sábado, 12 de junho de 2004</td>
-                              <td>
-                                <a
-                                  href="index.php@option=com_content&amp;task=view&amp;id=1&amp;Itemid=2.html"
-                                >
-                                  Núcleo do Evento!
-                                </a>
-                              </td>
-                              <td align="left">Web Master</td>
-                              <td align="center">20</td>
-                            </tr>
-                            <tr>
-                              <td colspan="4">&nbsp;</td>
-                            </tr>
-                            <tr>
-                              <td
-                                align="center"
-                                colspan="4"
-                                class="sectiontablefooter"
+                              <span class="pagenav"
+                                ><img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/voltar.gif"
+                                />&nbsp;Anterior</span
                               >
-                                <span class="pagenav"
-                                  ><img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/voltar.gif"
-                                  /><img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/voltar.gif"
-                                  />&nbsp;Início</span
-                                >
-                                <span class="pagenav"
-                                  ><img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/voltar.gif"
-                                  />&nbsp;Anterior</span
-                                >
-                                <span class="pagenav">1</span>
-                                <span class="pagenav"
-                                  >Próxima&nbsp;<img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/avancar.gif"
-                                /></span>
-                                <span class="pagenav"
-                                  >Fim&nbsp;<img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/avancar.gif" /><img
-                                    border="0"
-                                    align="absmiddle"
-                                    src="images/avancar.gif"
-                                /></span>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td colspan="4" align="right">
-                                Resultados 1 - 1 de 1
-                              </td>
-                            </tr>
-                          </table>
-                          <input type="hidden" name="id" value="1" />
-                          <input type="hidden" name="sectionid" value="1" />
-                          <input type="hidden" name="task" value="category" />
-                          <input
-                            type="hidden"
-                            name="option"
-                            value="com_content"
-                          />
-                        
+                              <span class="pagenav">1</span>
+                              <span class="pagenav"
+                                >Próxima&nbsp;<img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/avancar.gif"
+                              /></span>
+                              <span class="pagenav"
+                                >Fim&nbsp;<img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/avancar.gif" /><img
+                                  border="0"
+                                  align="absmiddle"
+                                  src="images/avancar.gif"
+                              /></span>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td colspan="4" align="right">
+                              Resultados 1 - 1 de 1
+                            </td>
+                          </tr>
+                        </table>
+                        <input type="hidden" name="id" value="1" />
+                        <input type="hidden" name="sectionid" value="1" />
+                        <input type="hidden" name="task" value="category" />
+                        <input
+                          type="hidden"
+                          name="option"
+                          value="com_content"
+                        />
                       </td>
                     </tr>
                     <tr>
@@ -756,37 +741,33 @@
                                 <label for="shop_search_field"
                                   >Procurar Produto</label
                                 >
-                                
-                                  <input
-                                    id="shop_search_field"
-                                    title="Procurar"
-                                    class="inputbox"
-                                    type="text"
-                                    size="12"
-                                    name="keyword"
-                                  />
-                                  <input
-                                    class="button"
-                                    type="submit"
-                                    name="Search"
-                                    value="Procurar"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="Itemid"
-                                    value="29"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="option"
-                                    value="com_virtuemart"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="page"
-                                    value="shop.browse"
-                                  />
-                                
+
+                                <input
+                                  id="shop_search_field"
+                                  title="Procurar"
+                                  class="inputbox"
+                                  type="text"
+                                  size="12"
+                                  name="keyword"
+                                />
+                                <input
+                                  class="button"
+                                  type="submit"
+                                  name="Search"
+                                  value="Procurar"
+                                />
+                                <input type="hidden" name="Itemid" value="29" />
+                                <input
+                                  type="hidden"
+                                  name="option"
+                                  value="com_virtuemart"
+                                />
+                                <input
+                                  type="hidden"
+                                  name="page"
+                                  value="shop.browse"
+                                />
+
                                 <br />
                                 <a
                                   href="index.php@option=com_virtuemart&amp;page=shop.search&amp;Itemid=29.html"
@@ -807,103 +788,92 @@
                       <div>
                         <div>
                           <h3>Login</h3>
-                          
-                            <table
-                              width="100%"
-                              border="0"
-                              cellspacing="0"
-                              cellpadding="0"
-                              align="center"
-                            >
-                              <tr>
-                                <td>
-                                  <label for="mod_login_username">
-                                    Nome de Usuário
-                                  </label>
-                                  <br />
-                                  <input
-                                    name="username"
-                                    id="mod_login_username"
-                                    type="text"
-                                    class="inputbox"
-                                    alt="username"
-                                    size="10"
-                                  />
-                                  <br />
-                                  <label for="mod_login_password">
-                                    Senha
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="password"
-                                    id="mod_login_password"
-                                    name="passwd"
-                                    class="inputbox"
-                                    size="10"
-                                    alt="password"
-                                  />
-                                  <br />
-                                  <input
-                                    type="checkbox"
-                                    name="remember"
-                                    id="mod_login_remember"
-                                    class="inputbox"
-                                    value="yes"
-                                    alt="Remember Me"
-                                  />
-                                  <label for="mod_login_remember">
-                                    Lembrar-me
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="submit"
-                                    name="Submit"
-                                    class="button"
-                                    value="Login"
-                                  />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="index.php@option=com_registration&amp;task=lostPassword.html"
-                                  >
-                                    Perdeu sua Senha?</a
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Não se cadastrou?
-                                  <a href="#"> Cadastre-se já !</a>
-                                </td>
-                              </tr>
-                            </table>
 
-                            <input type="hidden" name="option" value="login" />
-                            <input type="hidden" name="op2" value="login" />
-                            <input
-                              type="hidden"
-                              name="lang"
-                              value="brazilian"
-                            />
-                            <input
-                              type="hidden"
-                              name="return"
-                              value="index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=1&amp;Itemid=2"
-                            />
-                            <input type="hidden" name="message" value="0" />
-                            <input
-                              type="hidden"
-                              name="force_session"
-                              value="1"
-                            />
-                            <input
-                              type="hidden"
-                              name="jffbc6ea859fa1b38114ee37d031ccf8b"
-                              value="1"
-                            />
-                          
+                          <table
+                            width="100%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            align="center"
+                          >
+                            <tr>
+                              <td>
+                                <label for="mod_login_username">
+                                  Nome de Usuário
+                                </label>
+                                <br />
+                                <input
+                                  name="username"
+                                  id="mod_login_username"
+                                  type="text"
+                                  class="inputbox"
+                                  alt="username"
+                                  size="10"
+                                />
+                                <br />
+                                <label for="mod_login_password"> Senha </label>
+                                <br />
+                                <input
+                                  type="password"
+                                  id="mod_login_password"
+                                  name="passwd"
+                                  class="inputbox"
+                                  size="10"
+                                  alt="password"
+                                />
+                                <br />
+                                <input
+                                  type="checkbox"
+                                  name="remember"
+                                  id="mod_login_remember"
+                                  class="inputbox"
+                                  value="yes"
+                                  alt="Remember Me"
+                                />
+                                <label for="mod_login_remember">
+                                  Lembrar-me
+                                </label>
+                                <br />
+                                <input
+                                  type="submit"
+                                  name="Submit"
+                                  class="button"
+                                  value="Login"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="index.php@option=com_registration&amp;task=lostPassword.html"
+                                >
+                                  Perdeu sua Senha?</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Não se cadastrou?
+                                <a href="#"> Cadastre-se já !</a>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <input type="hidden" name="option" value="login" />
+                          <input type="hidden" name="op2" value="login" />
+                          <input type="hidden" name="lang" value="brazilian" />
+                          <input
+                            type="hidden"
+                            name="return"
+                            value="index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=1&amp;Itemid=2"
+                          />
+                          <input type="hidden" name="message" value="0" />
+                          <input type="hidden" name="force_session" value="1" />
+                          <input
+                            type="hidden"
+                            name="jffbc6ea859fa1b38114ee37d031ccf8b"
+                            value="1"
+                          />
                         </div>
                       </div>
                     </div>

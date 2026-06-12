@@ -176,25 +176,23 @@
           </div>
 
           <div id="ja-search">
-            
-              <div class="search">
-                <input
-                  name="searchword"
-                  id="mod_search_searchword"
-                  maxlength="20"
-                  alt="search"
-                  class="inputbox"
-                  type="text"
-                  size="20"
-                  value="pesquisar..."
-                  onblur="if (this.value == '') this.value = 'pesquisar...';"
-                  onfocus="if (this.value == 'pesquisar...') this.value = '';"
-                />
-              </div>
+            <div class="search">
+              <input
+                name="searchword"
+                id="mod_search_searchword"
+                maxlength="20"
+                alt="search"
+                class="inputbox"
+                type="text"
+                size="20"
+                value="pesquisar..."
+                onblur="if (this.value == '') this.value = 'pesquisar...';"
+                onfocus="if (this.value == 'pesquisar...') this.value = '';"
+              />
+            </div>
 
-              <input type="hidden" name="option" value="com_search" />
-              <input type="hidden" name="Itemid" value="5" />
-            
+            <input type="hidden" name="option" value="com_search" />
+            <input type="hidden" name="Itemid" value="5" />
           </div>
         </div>
         <!-- END: HEADER -->
@@ -295,87 +293,85 @@
               <div id="ja-contentwrap">
                 <div id="ja-content">
                   <div class="componentheading">Busca</div>
-                  
-                    <input type="hidden" name="option" value="com_search" />
-                    <input type="hidden" name="Itemid" value="5" />
-                    <table class="contentpaneopen">
-                      <tr>
-                        <td nowrap="nowrap">
-                          <label for="search_searchword">
-                            Pesquisar palavra chave:
-                          </label>
-                        </td>
-                        <td nowrap="nowrap">
-                          <input
-                            type="text"
-                            name="searchword"
-                            id="search_searchword"
-                            size="30"
-                            maxlength="20"
-                            value=""
-                            class="inputbox"
-                          />
-                        </td>
-                        <td width="100%" nowrap="nowrap">
-                          <input
-                            type="submit"
-                            name="submit"
-                            value="Pesquisar"
-                            class="button"
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3">
-                          <input
-                            type="radio"
-                            name="searchphrase"
-                            id="searchphraseany"
-                            value="any"
-                            checked="checked"
-                          />
-                          <label for="searchphraseany"
-                            >Qualquer das palavras</label
-                          >
-                          <input
-                            type="radio"
-                            name="searchphrase"
-                            id="searchphraseall"
-                            value="all"
-                          />
-                          <label for="searchphraseall">Todas as palavras</label>
-                          <input
-                            type="radio"
-                            name="searchphrase"
-                            id="searchphraseexact"
-                            value="exact"
-                          />
-                          <label for="searchphraseexact">Frase exata</label>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td colspan="3">
-                          <label for="search_ordering"> Ordem: </label>
 
-                          <select
-                            name="ordering"
-                            id="search_ordering"
-                            class="inputbox"
-                          >
-                            <option value="newest" selected="selected">
-                              Mais recentes primeiro
-                            </option>
-                            <option value="oldest">
-                              Mais antigos primeiro
-                            </option>
-                            <option value="popular">Mais acessados</option>
-                            <option value="alpha">Alfabética</option>
-                            <option value="category">Seção/Categoria</option>
-                          </select>
-                        </td>
-                      </tr>
-                    </table>
-                  
+                  <input type="hidden" name="option" value="com_search" />
+                  <input type="hidden" name="Itemid" value="5" />
+                  <table class="contentpaneopen">
+                    <tr>
+                      <td nowrap="nowrap">
+                        <label for="search_searchword">
+                          Pesquisar palavra chave:
+                        </label>
+                      </td>
+                      <td nowrap="nowrap">
+                        <input
+                          type="text"
+                          name="searchword"
+                          id="search_searchword"
+                          size="30"
+                          maxlength="20"
+                          value=""
+                          class="inputbox"
+                        />
+                      </td>
+                      <td width="100%" nowrap="nowrap">
+                        <input
+                          type="submit"
+                          name="submit"
+                          value="Pesquisar"
+                          class="button"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <input
+                          type="radio"
+                          name="searchphrase"
+                          id="searchphraseany"
+                          value="any"
+                          checked="checked"
+                        />
+                        <label for="searchphraseany"
+                          >Qualquer das palavras</label
+                        >
+                        <input
+                          type="radio"
+                          name="searchphrase"
+                          id="searchphraseall"
+                          value="all"
+                        />
+                        <label for="searchphraseall">Todas as palavras</label>
+                        <input
+                          type="radio"
+                          name="searchphrase"
+                          id="searchphraseexact"
+                          value="exact"
+                        />
+                        <label for="searchphraseexact">Frase exata</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="3">
+                        <label for="search_ordering"> Ordem: </label>
+
+                        <select
+                          name="ordering"
+                          id="search_ordering"
+                          class="inputbox"
+                        >
+                          <option value="newest" selected="selected">
+                            Mais recentes primeiro
+                          </option>
+                          <option value="oldest">Mais antigos primeiro</option>
+                          <option value="popular">Mais acessados</option>
+                          <option value="alpha">Alfabética</option>
+                          <option value="category">Seção/Categoria</option>
+                        </select>
+                      </td>
+                    </tr>
+                  </table>
+
                   <br />
                   <div class="back_button">
                     <a href="javascript:history.go(-1)"> [ Voltar ]</a>
@@ -539,37 +535,33 @@
                                 <label for="shop_search_field"
                                   >Procurar Produto</label
                                 >
-                                
-                                  <input
-                                    id="shop_search_field"
-                                    title="Procurar"
-                                    class="inputbox"
-                                    type="text"
-                                    size="12"
-                                    name="keyword"
-                                  />
-                                  <input
-                                    class="button"
-                                    type="submit"
-                                    name="Search"
-                                    value="Procurar"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="Itemid"
-                                    value="29"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="option"
-                                    value="com_virtuemart"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="page"
-                                    value="shop.browse"
-                                  />
-                                
+
+                                <input
+                                  id="shop_search_field"
+                                  title="Procurar"
+                                  class="inputbox"
+                                  type="text"
+                                  size="12"
+                                  name="keyword"
+                                />
+                                <input
+                                  class="button"
+                                  type="submit"
+                                  name="Search"
+                                  value="Procurar"
+                                />
+                                <input type="hidden" name="Itemid" value="29" />
+                                <input
+                                  type="hidden"
+                                  name="option"
+                                  value="com_virtuemart"
+                                />
+                                <input
+                                  type="hidden"
+                                  name="page"
+                                  value="shop.browse"
+                                />
+
                                 <br />
                                 <a
                                   href="index.php@option=com_virtuemart&amp;page=shop.search&amp;Itemid=29.html"
@@ -590,103 +582,92 @@
                       <div>
                         <div>
                           <h3>Login</h3>
-                          
-                            <table
-                              width="100%"
-                              border="0"
-                              cellspacing="0"
-                              cellpadding="0"
-                              align="center"
-                            >
-                              <tr>
-                                <td>
-                                  <label for="mod_login_username">
-                                    Nome de Usuário
-                                  </label>
-                                  <br />
-                                  <input
-                                    name="username"
-                                    id="mod_login_username"
-                                    type="text"
-                                    class="inputbox"
-                                    alt="username"
-                                    size="10"
-                                  />
-                                  <br />
-                                  <label for="mod_login_password">
-                                    Senha
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="password"
-                                    id="mod_login_password"
-                                    name="passwd"
-                                    class="inputbox"
-                                    size="10"
-                                    alt="password"
-                                  />
-                                  <br />
-                                  <input
-                                    type="checkbox"
-                                    name="remember"
-                                    id="mod_login_remember"
-                                    class="inputbox"
-                                    value="yes"
-                                    alt="Remember Me"
-                                  />
-                                  <label for="mod_login_remember">
-                                    Lembrar-me
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="submit"
-                                    name="Submit"
-                                    class="button"
-                                    value="Login"
-                                  />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="index.php@option=com_registration&amp;task=lostPassword.html"
-                                  >
-                                    Perdeu sua Senha?</a
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Não se cadastrou?
-                                  <a href="#"> Cadastre-se já !</a>
-                                </td>
-                              </tr>
-                            </table>
 
-                            <input type="hidden" name="option" value="login" />
-                            <input type="hidden" name="op2" value="login" />
-                            <input
-                              type="hidden"
-                              name="lang"
-                              value="brazilian"
-                            />
-                            <input
-                              type="hidden"
-                              name="return"
-                              value="index.php?option=com_search&amp;Itemid=5"
-                            />
-                            <input type="hidden" name="message" value="0" />
-                            <input
-                              type="hidden"
-                              name="force_session"
-                              value="1"
-                            />
-                            <input
-                              type="hidden"
-                              name="jffbc6ea859fa1b38114ee37d031ccf8b"
-                              value="1"
-                            />
-                          
+                          <table
+                            width="100%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            align="center"
+                          >
+                            <tr>
+                              <td>
+                                <label for="mod_login_username">
+                                  Nome de Usuário
+                                </label>
+                                <br />
+                                <input
+                                  name="username"
+                                  id="mod_login_username"
+                                  type="text"
+                                  class="inputbox"
+                                  alt="username"
+                                  size="10"
+                                />
+                                <br />
+                                <label for="mod_login_password"> Senha </label>
+                                <br />
+                                <input
+                                  type="password"
+                                  id="mod_login_password"
+                                  name="passwd"
+                                  class="inputbox"
+                                  size="10"
+                                  alt="password"
+                                />
+                                <br />
+                                <input
+                                  type="checkbox"
+                                  name="remember"
+                                  id="mod_login_remember"
+                                  class="inputbox"
+                                  value="yes"
+                                  alt="Remember Me"
+                                />
+                                <label for="mod_login_remember">
+                                  Lembrar-me
+                                </label>
+                                <br />
+                                <input
+                                  type="submit"
+                                  name="Submit"
+                                  class="button"
+                                  value="Login"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="index.php@option=com_registration&amp;task=lostPassword.html"
+                                >
+                                  Perdeu sua Senha?</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Não se cadastrou?
+                                <a href="#"> Cadastre-se já !</a>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <input type="hidden" name="option" value="login" />
+                          <input type="hidden" name="op2" value="login" />
+                          <input type="hidden" name="lang" value="brazilian" />
+                          <input
+                            type="hidden"
+                            name="return"
+                            value="index.php?option=com_search&amp;Itemid=5"
+                          />
+                          <input type="hidden" name="message" value="0" />
+                          <input type="hidden" name="force_session" value="1" />
+                          <input
+                            type="hidden"
+                            name="jffbc6ea859fa1b38114ee37d031ccf8b"
+                            value="1"
+                          />
                         </div>
                       </div>
                     </div>

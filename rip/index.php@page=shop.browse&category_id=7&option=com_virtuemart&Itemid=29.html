@@ -186,25 +186,23 @@
           </div>
 
           <div id="ja-search">
-            
-              <div class="search">
-                <input
-                  name="searchword"
-                  id="mod_search_searchword"
-                  maxlength="20"
-                  alt="search"
-                  class="inputbox"
-                  type="text"
-                  size="20"
-                  value="pesquisar..."
-                  onblur="if (this.value == '') this.value = 'pesquisar...';"
-                  onfocus="if (this.value == 'pesquisar...') this.value = '';"
-                />
-              </div>
+            <div class="search">
+              <input
+                name="searchword"
+                id="mod_search_searchword"
+                maxlength="20"
+                alt="search"
+                class="inputbox"
+                type="text"
+                size="20"
+                value="pesquisar..."
+                onblur="if (this.value == '') this.value = 'pesquisar...';"
+                onfocus="if (this.value == 'pesquisar...') this.value = '';"
+              />
+            </div>
 
-              <input type="hidden" name="option" value="com_search" />
-              <input type="hidden" name="Itemid" value="5" />
-            
+            <input type="hidden" name="option" value="com_search" />
+            <input type="hidden" name="Itemid" value="5" />
           </div>
         </div>
         <!-- END: HEADER -->
@@ -351,45 +349,45 @@
                   <h3>Procurar Artigos</h3>
                   <div style="text-align: left"></div>
                   <!-- ORDER BY .... FORM -->
-                  
-                    Ordenar por:
-                    <select
-                      class="inputbox"
-                      name="orderby"
-                      onchange="order.submit()"
-                    >
-                      <option value="product_name">Selecionar</option>
-                      <option value="product_name" selected="selected">
-                        Nome do Produto
+
+                  Ordenar por:
+                  <select
+                    class="inputbox"
+                    name="orderby"
+                    onchange="order.submit()"
+                  >
+                    <option value="product_name">Selecionar</option>
+                    <option value="product_name" selected="selected">
+                      Nome do Produto
+                    </option>
+                    <option value="product_price">Preço</option>
+                    <option value="product_cdate">Últimos Produtos</option>
+                  </select>
+                  <script type="text/javascript">
+                    //<![CDATA[
+                    document.write(
+                      '<input type="hidden" name="DescOrderBy" value="ASC" /><a href="javascript: document.order.DescOrderBy.value=\'DESC\'; document.order.submit()"><img src="images/M_images/sort_asc.png" border="0" alt="Ordem Ascendente" title="Ordem Descendente" width="12" height="12"/></a>',
+                    );
+                    //]]>
+                  </script>
+                  <noscript>
+                    <select class="inputbox" name="DescOrderBy">
+                      <option value="DESC">Ordem Descendente</option>
+                      <option selected="selected" value="ASC">
+                        Ordem Ascendente
                       </option>
-                      <option value="product_price">Preço</option>
-                      <option value="product_cdate">Últimos Produtos</option>
                     </select>
-                    <script type="text/javascript">
-                      //<![CDATA[
-                      document.write(
-                        '<input type="hidden" name="DescOrderBy" value="ASC" /><a href="javascript: document.order.DescOrderBy.value=\'DESC\'; document.order.submit()"><img src="images/M_images/sort_asc.png" border="0" alt="Ordem Ascendente" title="Ordem Descendente" width="12" height="12"/></a>',
-                      );
-                      //]]>
-                    </script>
-                    <noscript>
-                      <select class="inputbox" name="DescOrderBy">
-                        <option value="DESC">Ordem Descendente</option>
-                        <option selected="selected" value="ASC">
-                          Ordem Ascendente
-                        </option>
-                      </select>
-                      <input class="button" type="submit" value="Submeter" />
-                    </noscript>
-                    <input type="hidden" name="Itemid" value="29" />
-                    <input type="hidden" name="option" value="com_virtuemart" />
-                    <input type="hidden" name="page" value="shop.browse" />
-                    <input type="hidden" name="category_id" value="7" />
-                    <input type="hidden" name="manufacturer_id" value="0" />
-                    <input type="hidden" name="keyword" value="" />
-                    <input type="hidden" name="keyword1" value="" />
-                    <input type="hidden" name="keyword2" value="" />
-                  
+                    <input class="button" type="submit" value="Submeter" />
+                  </noscript>
+                  <input type="hidden" name="Itemid" value="29" />
+                  <input type="hidden" name="option" value="com_virtuemart" />
+                  <input type="hidden" name="page" value="shop.browse" />
+                  <input type="hidden" name="category_id" value="7" />
+                  <input type="hidden" name="manufacturer_id" value="0" />
+                  <input type="hidden" name="keyword" value="" />
+                  <input type="hidden" name="keyword1" value="" />
+                  <input type="hidden" name="keyword2" value="" />
+
                   <div id="product_list" style="width: 100%; float: none">
                     <div
                       style="margin-right: 5px; width: 96%; float: left"
@@ -451,68 +449,54 @@
                           <div
                             style="float: left; width: 30%; text-align: center"
                           >
-                            
-                              <label for="quantity_0">Quantidade:</label>
+                            <label for="quantity_0">Quantidade:</label>
 
-                              <input
-                                id="quantity_0"
-                                class="inputbox"
-                                type="text"
-                                size="3"
-                                name="quantity"
-                                value="1"
-                              />
-                              <input
-                                type="submit"
-                                style="
-                                  text-align: center;
-                                  background-position: bottom left;
-                                  width: 160px;
-                                  height: 35px;
-                                  cursor: pointer;
-                                  border: none;
-                                  font-weight: bold;
-                                  font-family: inherit;
-                                  background: url(&quot;components/com_virtuemart/shop_image/ps_image/add-to-cart_orange.gif&quot;)
-                                    no-repeat left center transparent;
-                                  vertical-align: middle;
-                                  overflow: hidden;
-                                "
-                                value="Adicionar"
-                                title="Adicionar"
-                              />
-                              <input
-                                type="hidden"
-                                name="category_id"
-                                value="7"
-                              />
+                            <input
+                              id="quantity_0"
+                              class="inputbox"
+                              type="text"
+                              size="3"
+                              name="quantity"
+                              value="1"
+                            />
+                            <input
+                              type="submit"
+                              style="
+                                text-align: center;
+                                background-position: bottom left;
+                                width: 160px;
+                                height: 35px;
+                                cursor: pointer;
+                                border: none;
+                                font-weight: bold;
+                                font-family: inherit;
+                                background: url(&quot;components/com_virtuemart/shop_image/ps_image/add-to-cart_orange.gif&quot;)
+                                  no-repeat left center transparent;
+                                vertical-align: middle;
+                                overflow: hidden;
+                              "
+                              value="Adicionar"
+                              title="Adicionar"
+                            />
+                            <input type="hidden" name="category_id" value="7" />
 
-                              <input
-                                type="hidden"
-                                name="product_id"
-                                value="18"
-                              />
+                            <input type="hidden" name="product_id" value="18" />
 
-                              <input
-                                type="hidden"
-                                name="page"
-                                value="shop.cart"
-                              />
+                            <input
+                              type="hidden"
+                              name="page"
+                              value="shop.cart"
+                            />
 
-                              <input
-                                type="hidden"
-                                name="func"
-                                value="cartadd"
-                              />
+                            <input type="hidden" name="func" value="cartadd" />
 
-                              <input type="hidden" name="Itemid" value="29" />
+                            <input type="hidden" name="Itemid" value="29" />
 
-                              <input
-                                type="hidden"
-                                name="option"
-                                value="com_virtuemart"
-                              />
-                            
+                            <input
+                              type="hidden"
+                              name="option"
+                              value="com_virtuemart"
+                            />
                           </div>
                           <div style="float: left; width: 30%"></div>
                         </div>
@@ -580,68 +564,54 @@
                           <div
                             style="float: left; width: 30%; text-align: center"
                           >
-                            
-                              <label for="quantity_1">Quantidade:</label>
+                            <label for="quantity_1">Quantidade:</label>
 
-                              <input
-                                id="quantity_1"
-                                class="inputbox"
-                                type="text"
-                                size="3"
-                                name="quantity"
-                                value="1"
-                              />
-                              <input
-                                type="submit"
-                                style="
-                                  text-align: center;
-                                  background-position: bottom left;
-                                  width: 160px;
-                                  height: 35px;
-                                  cursor: pointer;
-                                  border: none;
-                                  font-weight: bold;
-                                  font-family: inherit;
-                                  background: url(&quot;components/com_virtuemart/shop_image/ps_image/add-to-cart_orange.gif&quot;)
-                                    no-repeat left center transparent;
-                                  vertical-align: middle;
-                                  overflow: hidden;
-                                "
-                                value="Adicionar"
-                                title="Adicionar"
-                              />
-                              <input
-                                type="hidden"
-                                name="category_id"
-                                value="7"
-                              />
+                            <input
+                              id="quantity_1"
+                              class="inputbox"
+                              type="text"
+                              size="3"
+                              name="quantity"
+                              value="1"
+                            />
+                            <input
+                              type="submit"
+                              style="
+                                text-align: center;
+                                background-position: bottom left;
+                                width: 160px;
+                                height: 35px;
+                                cursor: pointer;
+                                border: none;
+                                font-weight: bold;
+                                font-family: inherit;
+                                background: url(&quot;components/com_virtuemart/shop_image/ps_image/add-to-cart_orange.gif&quot;)
+                                  no-repeat left center transparent;
+                                vertical-align: middle;
+                                overflow: hidden;
+                              "
+                              value="Adicionar"
+                              title="Adicionar"
+                            />
+                            <input type="hidden" name="category_id" value="7" />
 
-                              <input
-                                type="hidden"
-                                name="product_id"
-                                value="17"
-                              />
+                            <input type="hidden" name="product_id" value="17" />
 
-                              <input
-                                type="hidden"
-                                name="page"
-                                value="shop.cart"
-                              />
+                            <input
+                              type="hidden"
+                              name="page"
+                              value="shop.cart"
+                            />
 
-                              <input
-                                type="hidden"
-                                name="func"
-                                value="cartadd"
-                              />
+                            <input type="hidden" name="func" value="cartadd" />
 
-                              <input type="hidden" name="Itemid" value="29" />
+                            <input type="hidden" name="Itemid" value="29" />
 
-                              <input
-                                type="hidden"
-                                name="option"
-                                value="com_virtuemart"
-                              />
-                            
+                            <input
+                              type="hidden"
+                              name="option"
+                              value="com_virtuemart"
+                            />
                           </div>
                           <div style="float: left; width: 30%"></div>
                         </div>
@@ -750,7 +720,6 @@
                                 <a
                                   href="index.php@option=com_virtuemart&amp;Itemid=29.html"
                                   class="mainlevel"
-                                  
                                   >Loja Virtual</a
                                 >
                               </td>
@@ -840,37 +809,33 @@
                                 <label for="shop_search_field"
                                   >Procurar Produto</label
                                 >
-                                
-                                  <input
-                                    id="shop_search_field"
-                                    title="Procurar"
-                                    class="inputbox"
-                                    type="text"
-                                    size="12"
-                                    name="keyword"
-                                  />
-                                  <input
-                                    class="button"
-                                    type="submit"
-                                    name="Search"
-                                    value="Procurar"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="Itemid"
-                                    value="29"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="option"
-                                    value="com_virtuemart"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="page"
-                                    value="shop.browse"
-                                  />
-                                
+
+                                <input
+                                  id="shop_search_field"
+                                  title="Procurar"
+                                  class="inputbox"
+                                  type="text"
+                                  size="12"
+                                  name="keyword"
+                                />
+                                <input
+                                  class="button"
+                                  type="submit"
+                                  name="Search"
+                                  value="Procurar"
+                                />
+                                <input type="hidden" name="Itemid" value="29" />
+                                <input
+                                  type="hidden"
+                                  name="option"
+                                  value="com_virtuemart"
+                                />
+                                <input
+                                  type="hidden"
+                                  name="page"
+                                  value="shop.browse"
+                                />
+
                                 <br />
                                 <a
                                   href="index.php@option=com_virtuemart&amp;page=shop.search&amp;Itemid=29.html"
@@ -891,103 +856,92 @@
                       <div>
                         <div>
                           <h3>Login</h3>
-                          
-                            <table
-                              width="100%"
-                              border="0"
-                              cellspacing="0"
-                              cellpadding="0"
-                              align="center"
-                            >
-                              <tr>
-                                <td>
-                                  <label for="mod_login_username">
-                                    Nome de Usuário
-                                  </label>
-                                  <br />
-                                  <input
-                                    name="username"
-                                    id="mod_login_username"
-                                    type="text"
-                                    class="inputbox"
-                                    alt="username"
-                                    size="10"
-                                  />
-                                  <br />
-                                  <label for="mod_login_password">
-                                    Senha
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="password"
-                                    id="mod_login_password"
-                                    name="passwd"
-                                    class="inputbox"
-                                    size="10"
-                                    alt="password"
-                                  />
-                                  <br />
-                                  <input
-                                    type="checkbox"
-                                    name="remember"
-                                    id="mod_login_remember"
-                                    class="inputbox"
-                                    value="yes"
-                                    alt="Remember Me"
-                                  />
-                                  <label for="mod_login_remember">
-                                    Lembrar-me
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="submit"
-                                    name="Submit"
-                                    class="button"
-                                    value="Login"
-                                  />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="index.php@option=com_registration&amp;task=lostPassword.html"
-                                  >
-                                    Perdeu sua Senha?</a
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Não se cadastrou?
-                                  <a href="#"> Cadastre-se já !</a>
-                                </td>
-                              </tr>
-                            </table>
 
-                            <input type="hidden" name="option" value="login" />
-                            <input type="hidden" name="op2" value="login" />
-                            <input
-                              type="hidden"
-                              name="lang"
-                              value="brazilian"
-                            />
-                            <input
-                              type="hidden"
-                              name="return"
-                              value="index.php?page=shop.browse&amp;category_id=7&amp;option=com_virtuemart&amp;Itemid=29"
-                            />
-                            <input type="hidden" name="message" value="0" />
-                            <input
-                              type="hidden"
-                              name="force_session"
-                              value="1"
-                            />
-                            <input
-                              type="hidden"
-                              name="jffbc6ea859fa1b38114ee37d031ccf8b"
-                              value="1"
-                            />
-                          
+                          <table
+                            width="100%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            align="center"
+                          >
+                            <tr>
+                              <td>
+                                <label for="mod_login_username">
+                                  Nome de Usuário
+                                </label>
+                                <br />
+                                <input
+                                  name="username"
+                                  id="mod_login_username"
+                                  type="text"
+                                  class="inputbox"
+                                  alt="username"
+                                  size="10"
+                                />
+                                <br />
+                                <label for="mod_login_password"> Senha </label>
+                                <br />
+                                <input
+                                  type="password"
+                                  id="mod_login_password"
+                                  name="passwd"
+                                  class="inputbox"
+                                  size="10"
+                                  alt="password"
+                                />
+                                <br />
+                                <input
+                                  type="checkbox"
+                                  name="remember"
+                                  id="mod_login_remember"
+                                  class="inputbox"
+                                  value="yes"
+                                  alt="Remember Me"
+                                />
+                                <label for="mod_login_remember">
+                                  Lembrar-me
+                                </label>
+                                <br />
+                                <input
+                                  type="submit"
+                                  name="Submit"
+                                  class="button"
+                                  value="Login"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="index.php@option=com_registration&amp;task=lostPassword.html"
+                                >
+                                  Perdeu sua Senha?</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Não se cadastrou?
+                                <a href="#"> Cadastre-se já !</a>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <input type="hidden" name="option" value="login" />
+                          <input type="hidden" name="op2" value="login" />
+                          <input type="hidden" name="lang" value="brazilian" />
+                          <input
+                            type="hidden"
+                            name="return"
+                            value="index.php?page=shop.browse&amp;category_id=7&amp;option=com_virtuemart&amp;Itemid=29"
+                          />
+                          <input type="hidden" name="message" value="0" />
+                          <input type="hidden" name="force_session" value="1" />
+                          <input
+                            type="hidden"
+                            name="jffbc6ea859fa1b38114ee37d031ccf8b"
+                            value="1"
+                          />
                         </div>
                       </div>
                     </div>
@@ -1096,45 +1050,41 @@
                     <div>
                       <div>
                         <h3>Fabricantes</h3>
-                        
-                          <ul>
-                            <li>
-                              <a
-                                href="index.php@option=com_virtuemart&amp;page=shop.browse&amp;manufacturer_id=2&amp;Itemid=29.html"
-                              >
-                                Comemorare
-                              </a>
-                            </li>
-                          </ul>
-                          <!--BEGIN manufacturer DropDown List -->
-                          <input
-                            type="hidden"
-                            name="option"
-                            value="com_virtuemart"
-                          />
-                          <input
-                            type="hidden"
-                            name="page"
-                            value="shop.browse"
-                          />
-                          <input type="hidden" name="Itemid" value="29" />
-                          <br />
-                          <select
-                            class="inputbox"
-                            name="manufacturer_id"
-                            onchange="this.form.submit()"
-                          >
-                            <option value="">Selecione</option>
-                            <option value="2">Comemorare</option>
-                          </select>
-                          <br />
-                          <input
-                            class="button"
-                            type="submit"
-                            name="manufacturerSearch"
-                            value="Pesquisar"
-                          />
-                        
+
+                        <ul>
+                          <li>
+                            <a
+                              href="index.php@option=com_virtuemart&amp;page=shop.browse&amp;manufacturer_id=2&amp;Itemid=29.html"
+                            >
+                              Comemorare
+                            </a>
+                          </li>
+                        </ul>
+                        <!--BEGIN manufacturer DropDown List -->
+                        <input
+                          type="hidden"
+                          name="option"
+                          value="com_virtuemart"
+                        />
+                        <input type="hidden" name="page" value="shop.browse" />
+                        <input type="hidden" name="Itemid" value="29" />
+                        <br />
+                        <select
+                          class="inputbox"
+                          name="manufacturer_id"
+                          onchange="this.form.submit()"
+                        >
+                          <option value="">Selecione</option>
+                          <option value="2">Comemorare</option>
+                        </select>
+                        <br />
+                        <input
+                          class="button"
+                          type="submit"
+                          name="manufacturerSearch"
+                          value="Pesquisar"
+                        />
+
                         <!-- End Manufacturer Module -->
                       </div>
                     </div>

@@ -186,25 +186,23 @@
           </div>
 
           <div id="ja-search">
-            
-              <div class="search">
-                <input
-                  name="searchword"
-                  id="mod_search_searchword"
-                  maxlength="20"
-                  alt="search"
-                  class="inputbox"
-                  type="text"
-                  size="20"
-                  value="pesquisar..."
-                  onblur="if (this.value == '') this.value = 'pesquisar...';"
-                  onfocus="if (this.value == 'pesquisar...') this.value = '';"
-                />
-              </div>
+            <div class="search">
+              <input
+                name="searchword"
+                id="mod_search_searchword"
+                maxlength="20"
+                alt="search"
+                class="inputbox"
+                type="text"
+                size="20"
+                value="pesquisar..."
+                onblur="if (this.value == '') this.value = 'pesquisar...';"
+                onfocus="if (this.value == 'pesquisar...') this.value = '';"
+              />
+            </div>
 
-              <input type="hidden" name="option" value="com_search" />
-              <input type="hidden" name="Itemid" value="5" />
-            
+            <input type="hidden" name="option" value="com_search" />
+            <input type="hidden" name="Itemid" value="5" />
           </div>
         </div>
         <!-- END: HEADER -->
@@ -324,145 +322,135 @@
                         <!-- body starts here -->
                         <br />
 
-                        
-                          <input
-                            type="hidden"
-                            name="page"
-                            value="shop.browse"
-                          />
-                          <input
-                            type="hidden"
-                            name="option"
-                            value="com_virtuemart"
-                          />
-                          <input type="hidden" name="Itemid" value="29" />
+                        <input type="hidden" name="page" value="shop.browse" />
+                        <input
+                          type="hidden"
+                          name="option"
+                          value="com_virtuemart"
+                        />
+                        <input type="hidden" name="Itemid" value="29" />
 
-                          <table
-                            width="100%"
-                            border="0"
-                            cellpadding="0"
-                            cellspacing="0"
-                          >
-                            <tr>
-                              <td>
-                                <table
-                                  width="100%"
-                                  border="0"
-                                  cellpadding="2"
-                                  cellspacing="0"
-                                >
-                                  <tr>
-                                    <td valign="top">
-                                      <input
-                                        class="inputbox"
-                                        type="text"
-                                        name="keyword1"
-                                        size="20"
-                                      />
-                                      <br /><br />
-                                      <select class="inputbox" name="search_op">
-                                        <option value="and">e</option>
-                                        <option value="and not">não</option>
-                                      </select>
-                                      <br /><br />
-                                      <input
-                                        type="text"
-                                        class="inputbox"
-                                        name="keyword2"
-                                        size="20"
-                                      />
-                                      <br /><br />
-                                      <select
-                                        class="inputbox"
-                                        name="search_category"
-                                      >
-                                        <option value="0">
-                                          Procurar todas as categorias
-                                        </option>
+                        <table
+                          width="100%"
+                          border="0"
+                          cellpadding="0"
+                          cellspacing="0"
+                        >
+                          <tr>
+                            <td>
+                              <table
+                                width="100%"
+                                border="0"
+                                cellpadding="2"
+                                cellspacing="0"
+                              >
+                                <tr>
+                                  <td valign="top">
+                                    <input
+                                      class="inputbox"
+                                      type="text"
+                                      name="keyword1"
+                                      size="20"
+                                    />
+                                    <br /><br />
+                                    <select class="inputbox" name="search_op">
+                                      <option value="and">e</option>
+                                      <option value="and not">não</option>
+                                    </select>
+                                    <br /><br />
+                                    <input
+                                      type="text"
+                                      class="inputbox"
+                                      name="keyword2"
+                                      size="20"
+                                    />
+                                    <br /><br />
+                                    <select
+                                      class="inputbox"
+                                      name="search_category"
+                                    >
+                                      <option value="0">
+                                        Procurar todas as categorias
+                                      </option>
 
-                                        <option value="7">
-                                          Asa de Borboleta
-                                        </option>
+                                      <option value="7">
+                                        Asa de Borboleta
+                                      </option>
 
-                                        <option value="8">
-                                          Barba e Bigode
-                                        </option>
+                                      <option value="8">Barba e Bigode</option>
 
-                                        <option value="9">Bijoux</option>
+                                      <option value="9">Bijoux</option>
 
-                                        <option value="11">Diversos</option>
+                                      <option value="11">Diversos</option>
 
-                                        <option value="10">
-                                          Estolas e Boás
-                                        </option>
+                                      <option value="10">Estolas e Boás</option>
 
-                                        <option value="6">Fantasias</option>
-                                      </select>
-                                      <br /><br />
-                                      <select
-                                        class="inputbox"
-                                        name="search_limiter"
-                                      >
-                                        <option value="anywhere">
-                                          Procurar todos os detalhes do produto
-                                        </option>
-                                        <option value="name">
-                                          Apenas Produto
-                                        </option>
-                                        <option value="cp">
-                                          Apenas Marca/Vendedor
-                                        </option>
-                                        <option value="desc">
-                                          Apenas Descrição do Produto
-                                        </option>
-                                      </select>
-                                      <br /><br />
+                                      <option value="6">Fantasias</option>
+                                    </select>
+                                    <br /><br />
+                                    <select
+                                      class="inputbox"
+                                      name="search_limiter"
+                                    >
+                                      <option value="anywhere">
+                                        Procurar todos os detalhes do produto
+                                      </option>
+                                      <option value="name">
+                                        Apenas Produto
+                                      </option>
+                                      <option value="cp">
+                                        Apenas Marca/Vendedor
+                                      </option>
+                                      <option value="desc">
+                                        Apenas Descrição do Produto
+                                      </option>
+                                    </select>
+                                    <br /><br />
 
-                                      <input
-                                        type="submit"
-                                        class="button"
-                                        name="search"
-                                        value="Procurar"
-                                      />
-                                      <br />
-                                    </td>
-                                    <td valign="top">
-                                      <table
-                                        width="100%"
-                                        cellspacing="2"
-                                        cellpadding="2"
-                                        border="0"
-                                      >
-                                        <tr>
-                                          <td>
-                                            Pode adicionar mais palavras-chave e
-                                            operadores como E ou NÃO.
-                                            Selecionando E significa que ambas
-                                            as palavras têm de estar presentes
-                                            para o produto ser apresentado.
-                                            Selecionando NÃO signitica que a
-                                            primeira palavra tem de estar
-                                            presente e a segunda não poderá
-                                            existir para o produto for
-                                            apresentado. <br /><br />
-                                            A primeira lista permite selecionar
-                                            uma categoria a fim de limitar a
-                                            procura. A segunda lista permite
-                                            limitar os detalhes do produto (ex.
-                                            Nome). Uma vez selecionadas (ou
-                                            deixadas no padrão), introduza a
-                                            palavra-chave que deseja pesquisar.
-                                            <br />
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                        
+                                    <input
+                                      type="submit"
+                                      class="button"
+                                      name="search"
+                                      value="Procurar"
+                                    />
+                                    <br />
+                                  </td>
+                                  <td valign="top">
+                                    <table
+                                      width="100%"
+                                      cellspacing="2"
+                                      cellpadding="2"
+                                      border="0"
+                                    >
+                                      <tr>
+                                        <td>
+                                          Pode adicionar mais palavras-chave e
+                                          operadores como E ou NÃO. Selecionando
+                                          E significa que ambas as palavras têm
+                                          de estar presentes para o produto ser
+                                          apresentado. Selecionando NÃO
+                                          signitica que a primeira palavra tem
+                                          de estar presente e a segunda não
+                                          poderá existir para o produto for
+                                          apresentado. <br /><br />
+                                          A primeira lista permite selecionar
+                                          uma categoria a fim de limitar a
+                                          procura. A segunda lista permite
+                                          limitar os detalhes do produto (ex.
+                                          Nome). Uma vez selecionadas (ou
+                                          deixadas no padrão), introduza a
+                                          palavra-chave que deseja pesquisar.
+                                          <br />
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+
                         <script>
                           document.adv_search.keyword1.select();
                           document.adv_search.keyword1.focus();
@@ -568,7 +556,6 @@
                                 <a
                                   href="index.php@option=com_virtuemart&amp;Itemid=29.html"
                                   class="mainlevel"
-                                  
                                   >Loja Virtual</a
                                 >
                               </td>
@@ -629,37 +616,33 @@
                                 <label for="shop_search_field"
                                   >Procurar Produto</label
                                 >
-                                
-                                  <input
-                                    id="shop_search_field"
-                                    title="Procurar"
-                                    class="inputbox"
-                                    type="text"
-                                    size="12"
-                                    name="keyword"
-                                  />
-                                  <input
-                                    class="button"
-                                    type="submit"
-                                    name="Search"
-                                    value="Procurar"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="Itemid"
-                                    value="29"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="option"
-                                    value="com_virtuemart"
-                                  />
-                                  <input
-                                    type="hidden"
-                                    name="page"
-                                    value="shop.browse"
-                                  />
-                                
+
+                                <input
+                                  id="shop_search_field"
+                                  title="Procurar"
+                                  class="inputbox"
+                                  type="text"
+                                  size="12"
+                                  name="keyword"
+                                />
+                                <input
+                                  class="button"
+                                  type="submit"
+                                  name="Search"
+                                  value="Procurar"
+                                />
+                                <input type="hidden" name="Itemid" value="29" />
+                                <input
+                                  type="hidden"
+                                  name="option"
+                                  value="com_virtuemart"
+                                />
+                                <input
+                                  type="hidden"
+                                  name="page"
+                                  value="shop.browse"
+                                />
+
                                 <br />
                                 <a
                                   href="index.php@option=com_virtuemart&amp;page=shop.search&amp;Itemid=29.html"
@@ -680,103 +663,92 @@
                       <div>
                         <div>
                           <h3>Login</h3>
-                          
-                            <table
-                              width="100%"
-                              border="0"
-                              cellspacing="0"
-                              cellpadding="0"
-                              align="center"
-                            >
-                              <tr>
-                                <td>
-                                  <label for="mod_login_username">
-                                    Nome de Usuário
-                                  </label>
-                                  <br />
-                                  <input
-                                    name="username"
-                                    id="mod_login_username"
-                                    type="text"
-                                    class="inputbox"
-                                    alt="username"
-                                    size="10"
-                                  />
-                                  <br />
-                                  <label for="mod_login_password">
-                                    Senha
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="password"
-                                    id="mod_login_password"
-                                    name="passwd"
-                                    class="inputbox"
-                                    size="10"
-                                    alt="password"
-                                  />
-                                  <br />
-                                  <input
-                                    type="checkbox"
-                                    name="remember"
-                                    id="mod_login_remember"
-                                    class="inputbox"
-                                    value="yes"
-                                    alt="Remember Me"
-                                  />
-                                  <label for="mod_login_remember">
-                                    Lembrar-me
-                                  </label>
-                                  <br />
-                                  <input
-                                    type="submit"
-                                    name="Submit"
-                                    class="button"
-                                    value="Login"
-                                  />
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <a
-                                    href="index.php@option=com_registration&amp;task=lostPassword.html"
-                                  >
-                                    Perdeu sua Senha?</a
-                                  >
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  Não se cadastrou?
-                                  <a href="#"> Cadastre-se já !</a>
-                                </td>
-                              </tr>
-                            </table>
 
-                            <input type="hidden" name="option" value="login" />
-                            <input type="hidden" name="op2" value="login" />
-                            <input
-                              type="hidden"
-                              name="lang"
-                              value="brazilian"
-                            />
-                            <input
-                              type="hidden"
-                              name="return"
-                              value="index.php?option=com_virtuemart&amp;page=shop.search&amp;Itemid=29"
-                            />
-                            <input type="hidden" name="message" value="0" />
-                            <input
-                              type="hidden"
-                              name="force_session"
-                              value="1"
-                            />
-                            <input
-                              type="hidden"
-                              name="jffbc6ea859fa1b38114ee37d031ccf8b"
-                              value="1"
-                            />
-                          
+                          <table
+                            width="100%"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            align="center"
+                          >
+                            <tr>
+                              <td>
+                                <label for="mod_login_username">
+                                  Nome de Usuário
+                                </label>
+                                <br />
+                                <input
+                                  name="username"
+                                  id="mod_login_username"
+                                  type="text"
+                                  class="inputbox"
+                                  alt="username"
+                                  size="10"
+                                />
+                                <br />
+                                <label for="mod_login_password"> Senha </label>
+                                <br />
+                                <input
+                                  type="password"
+                                  id="mod_login_password"
+                                  name="passwd"
+                                  class="inputbox"
+                                  size="10"
+                                  alt="password"
+                                />
+                                <br />
+                                <input
+                                  type="checkbox"
+                                  name="remember"
+                                  id="mod_login_remember"
+                                  class="inputbox"
+                                  value="yes"
+                                  alt="Remember Me"
+                                />
+                                <label for="mod_login_remember">
+                                  Lembrar-me
+                                </label>
+                                <br />
+                                <input
+                                  type="submit"
+                                  name="Submit"
+                                  class="button"
+                                  value="Login"
+                                />
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <a
+                                  href="index.php@option=com_registration&amp;task=lostPassword.html"
+                                >
+                                  Perdeu sua Senha?</a
+                                >
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                Não se cadastrou?
+                                <a href="#"> Cadastre-se já !</a>
+                              </td>
+                            </tr>
+                          </table>
+
+                          <input type="hidden" name="option" value="login" />
+                          <input type="hidden" name="op2" value="login" />
+                          <input type="hidden" name="lang" value="brazilian" />
+                          <input
+                            type="hidden"
+                            name="return"
+                            value="index.php?option=com_virtuemart&amp;page=shop.search&amp;Itemid=29"
+                          />
+                          <input type="hidden" name="message" value="0" />
+                          <input type="hidden" name="force_session" value="1" />
+                          <input
+                            type="hidden"
+                            name="jffbc6ea859fa1b38114ee37d031ccf8b"
+                            value="1"
+                          />
                         </div>
                       </div>
                     </div>
@@ -884,45 +856,41 @@
                     <div>
                       <div>
                         <h3>Fabricantes</h3>
-                        
-                          <ul>
-                            <li>
-                              <a
-                                href="index.php@option=com_virtuemart&amp;page=shop.browse&amp;manufacturer_id=2&amp;Itemid=29.html"
-                              >
-                                Comemorare
-                              </a>
-                            </li>
-                          </ul>
-                          <!--BEGIN manufacturer DropDown List -->
-                          <input
-                            type="hidden"
-                            name="option"
-                            value="com_virtuemart"
-                          />
-                          <input
-                            type="hidden"
-                            name="page"
-                            value="shop.browse"
-                          />
-                          <input type="hidden" name="Itemid" value="29" />
-                          <br />
-                          <select
-                            class="inputbox"
-                            name="manufacturer_id"
-                            onchange="this.form.submit()"
-                          >
-                            <option value="">Selecione</option>
-                            <option value="2">Comemorare</option>
-                          </select>
-                          <br />
-                          <input
-                            class="button"
-                            type="submit"
-                            name="manufacturerSearch"
-                            value="Pesquisar"
-                          />
-                        
+
+                        <ul>
+                          <li>
+                            <a
+                              href="index.php@option=com_virtuemart&amp;page=shop.browse&amp;manufacturer_id=2&amp;Itemid=29.html"
+                            >
+                              Comemorare
+                            </a>
+                          </li>
+                        </ul>
+                        <!--BEGIN manufacturer DropDown List -->
+                        <input
+                          type="hidden"
+                          name="option"
+                          value="com_virtuemart"
+                        />
+                        <input type="hidden" name="page" value="shop.browse" />
+                        <input type="hidden" name="Itemid" value="29" />
+                        <br />
+                        <select
+                          class="inputbox"
+                          name="manufacturer_id"
+                          onchange="this.form.submit()"
+                        >
+                          <option value="">Selecione</option>
+                          <option value="2">Comemorare</option>
+                        </select>
+                        <br />
+                        <input
+                          class="button"
+                          type="submit"
+                          name="manufacturerSearch"
+                          value="Pesquisar"
+                        />
+
                         <!-- End Manufacturer Module -->
                       </div>
                     </div>

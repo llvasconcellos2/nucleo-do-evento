@@ -143,7 +143,7 @@ function OpacityObject(divId, strPath) {
 function od_object_setBackground() {	
 	if (pngAlpha) {
 		this.layerObject.zoom = "1";
-		this.layerObject.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled = true, src='"+this.path+".png', sizingMethod='scale')";
+		this.layerObject.filter = "progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled = true, src=""+this.path+".png", sizingMethod="scale")";
 		//this.layerObject.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity=70)";
 	} else if (pngNormal) {
 		this.layerObject.backgroundImage = 'url('+this.path+'.png)';
