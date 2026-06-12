@@ -36,7 +36,14 @@
 .clearfix {	display: inline-block;}
 </style>
 <![endif]-->
-</head>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<script>
+		window.RufflePlayer.config = {
+			autoplay: "on",
+			unmuteOverlay: "hidden",
+			splashScreen: false,
+		};
+	</script></head>
 
 <body id="bd" class="wide fs3"  >
 <a title="Pular Para o Conteúdo" href="index.php@page=shop.product_details&amp;category_id=10&amp;flypage=shop.flypage&amp;product_id=37&amp;option=com_virtuemart&amp;Itemid=29.html#Content" style="display: none;">Pular Para o Conteúdo</a>
@@ -321,7 +328,7 @@ R$ 17,86</span>
 	</tr>
 			<tr>
 			<td>
-				Não se cadastrou?				<a href="https://nucleodoevento.websiteseguro.com/index.php?option=com_virtuemart&amp;page=shop.registration&Itemid=29">
+				Não se cadastrou?				<a href="#">
 					Cadastre-se já !</a>
 			</td>
 		</tr>

@@ -68,7 +68,14 @@
         <script src="https://www-jp.mysql.com/common/js/polyfills/html5shiv-printshiv-3.7.2.min.js"></script>
         <script src="https://www-jp.mysql.com/common/js/polyfills/respond-1.4.2.min.js"></script>
     <![endif]-->
-    </head>
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<script>
+		window.RufflePlayer.config = {
+			autoplay: "on",
+			unmuteOverlay: "hidden",
+			splashScreen: false,
+		};
+	</script></head>
 
 <body class="no-sidebar full-page www">
     <header>

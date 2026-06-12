@@ -34,7 +34,14 @@
 .clearfix {	display: inline-block;}
 </style>
 <![endif]-->
-</head>
+<script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+	<script>
+		window.RufflePlayer.config = {
+			autoplay: "on",
+			unmuteOverlay: "hidden",
+			splashScreen: false,
+		};
+	</script></head>
 
 <body id="bd" class="wide fs3"  >
 <a title="Pular Para o Conteúdo" href="index.php@option=com_contact&amp;Itemid=3.html#Content" style="display: none;">Pular Para o Conteúdo</a>
@@ -390,7 +397,7 @@ links[1]='index.php?option=com_contact&task=view&contact_id=1&Itemid=3';
 	</tr>
 			<tr>
 			<td>
-				Não se cadastrou?				<a href="https://nucleodoevento.websiteseguro.com/index.php?option=com_virtuemart&amp;page=shop.registration&Itemid=29">
+				Não se cadastrou?				<a href="#">
 					Cadastre-se já !</a>
 			</td>
 		</tr>
