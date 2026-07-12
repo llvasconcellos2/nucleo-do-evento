@@ -70,9 +70,12 @@ The platform doubled as a regional SEO vehicle: the homepage covered virtually e
 
 **Key features — what was built and why it mattered:**
 
-- Built a Joomla 1.x portal with a fully custom template, creating a regional wedding and event hub for Joinville that aggregated photography vendors, suppliers, and editorial content — giving couples and organizers a single destination for planning celebrations and reducing the need for suppliers to maintain standalone sites.
-- Integrated VirtueMArt e-commerce with product categories (costumes, wedding accessories, decorations), product search, and cart functionality, enabling direct online sales of event and wedding photography supplies alongside editorial content.
-- Added live chat, Google Maps, user registration/login, audience polling, and multi-format RSS feeds (RSS 0.91/1.0/2.0, ATOM, OPML), building a community platform that served brides, photographers, and event vendors across its 13-year lifespan.
+<!-- KEY FEATURES -->
+### Key Features
+
+- **Regional wedding and event hub** — a custom-templated portal for Joinville aggregating photography vendors, suppliers, and editorial content, giving couples and organizers a single planning destination and sparing suppliers from maintaining standalone sites
+- **Integrated e-commerce store** — VirtueMart product categories (costumes, wedding accessories, decorations) with search and cart, enabling direct online sales of event and wedding supplies alongside the editorial content
+- **Community engagement platform** — live chat, maps, registration, audience polling, and multi-format RSS feeds that served brides, photographers, and vendors across the site's 13-year lifespan
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
